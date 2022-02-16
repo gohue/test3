@@ -87,7 +87,7 @@ ul {
 }
 
 .nav .profile .img {
-  background-image: url('.profile.jpg');
+  background-image: url('profile.jpg');
   background-position: 50%;
   background-size: cover;
   height: 30px;
@@ -102,11 +102,38 @@ ul {
 }
 
 .img-wrapper .karina {
-  background-image: url('.karina.jpg');
+  background-image: url('karina.jpg');
   background-size: cover;
   height: 550px;
   width: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .nav .profile .img {
+    background-image: none;
+    background-position: 50%;
+    background-size: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  .img-wrapper .karina {
+    background-image: none;
+    background-size: none;
+    height: 550px;
+    width: 0;
+  }
+  .profile{
+    display: none;
+  }
+  .left, .right {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+}
+
 
 .info {
   position: absolute;
